@@ -7,4 +7,4 @@ How to use INVICTUS:
                 We have hosted our website using Azure. 
 
 Available features: 
-    As of right now, we have the ability to navigate between the different pages. You will see the 3 tabs we have at the top of our website called Map, Profile, and Workouts. When you first open the link, the first page should say " My Google Maps Demo". Then, when you click on the Map tab, it will say "Invictus". However, when you click Profile and Workouts, it will say "The resource you are looking for has been removed, had its name changed, or is temporarily unavailable.". This is an error that we are attempting to fix. 
+    As of right now, we have the ability to navigate between the different pages. You will see the 5 tabs we have at the top of our website called Login, Home, Map, Profile, and Workouts. When you first open the link, the first page that pops up should be a login page. Right now, we do not have the functionality to login, but we have the page for it. Then, when you click on each tab, it will navigate you to the page. On most of the pages right now, besides login and map, we have a blurb about the pages future functionality. 
