@@ -11,4 +11,3 @@ attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">
 }).addTo(map);
 =======
 
->>>>>>> Stashed changes
