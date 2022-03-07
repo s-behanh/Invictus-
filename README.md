@@ -4,7 +4,7 @@ Hello! This is INVICTUS a workout tracking website. This website has been create
 
 How to use INVICTUS: 
     Head over to our hosted website by clicking this link: https://invictustwo.azurewebsites.net or another link https://invictus1.z13.web.core.windows.net/ 
-                We have hosted our website using Azure. 
+                We have hosted our website using Azure. There are 2 different versions here, the second link is the most update however the first link also has all of our pages. 
 
 Available features: 
     As of right now, we have the ability to navigate between the different pages. You will see the 5 tabs we have at the top of our website called Login, Home, Map, Profile, and Workouts. When you first open the link, the first page that pops up should be a login page. Right now, we do not have the functionality to login, but we have the page for it. Then, when you click on each tab, it is suppose to navigate you to each of our pages. On most of the pages right now, besides the login page, we have a blurb about the pages future functionality. Unfortunately because of a problem we have not yet been able to solve, you can only click to 1 page past the first page before the website has an error message that says content not found. 
