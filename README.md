@@ -4,6 +4,7 @@ Hello! This is INVICTUS a workout tracking website. This website has been create
 
 How to use INVICTUS: 
     Head over to our website by clicking this link: file:///Users/andijanunn/Documents/GitHub/tabs/workouts.html 
+                To view the link, you may have to copy and paste it in to a search engine to access the website. 
                 You should be able to navigate through all of the tabs freely to see each of our features. 
 Available features: 
 - navigate between 5 different tabs 
