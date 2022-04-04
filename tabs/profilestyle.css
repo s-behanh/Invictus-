@@ -2,7 +2,7 @@ html {
     height: 100%;
   }
   
-    head {
+    a {
     height: 100%;
     margin: 0px;
     font-family: times new roman;
@@ -14,7 +14,7 @@ html {
     }
   
     h1{
-    height: 70%;
+    height: 60%;
     margin: 0px;
     font-family: times new roman;
     color: black;
