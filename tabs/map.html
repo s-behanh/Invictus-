@@ -3,18 +3,81 @@
   <head>
     <title>INVICTUS Map</title>
     <link rel="stylesheet" href="mapstyle.css">
-    <a href="tabs/login.html">Login</a>
-    <a href="tabs/home.html">Home</a>
-    <a href="tabs/map.html">Map</a>
-    <a href="tabs/profile.html">Profile</a>
-    <a href="tabs/workouts.html">Workouts</a>
+ <h1><a href="login.html">Login</a>  <a href="home.html">Home</a> <a href="map.html">Map</a> <a href="profile.html">Profile</a> <a href="workouts.html">Workouts</a></h1>
     <link rel="index" href="index.html">
   </head>
   <body>
-    <h3>Map API</h3>
-
-    <div id="map"></div>
-
-  
+    <h3>Invictus</h3>
+    <script>
+      let map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: 47.7511, lng: -122.7401 },
+          zoom: 10,
+          disableDefaultUI: true,
+        });
+      }
+    </script>
+    <div class = "container">
+ <div style="width:50%, height:50%" id="map"><script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0HnGkPCj7ukulQP4JGCAuoaO_Ex-bhnQ&callback=initMap"></script>
+   <canvas width="1280" height="720" id="canvas">
+    </div>
+    <script>
+       class Point {
+        constructor(x, y) {
+            this.x = x
+            this.y = y
+            this.radius = 0
+        }
+    }
+    class Line {
+        constructor(object, target, color, width) {
+            this.object = object
+            this.target = target
+            this.color = color
+            this.width = width
+        }
+        draw() {
+            let linewidthstorage = canvas_context.lineWidth
+            canvas_context.strokeStyle = this.color
+            canvas_context.lineWidth = this.width
+            canvas_context.beginPath()
+            canvas_context.moveTo(this.object.x, this.object.y)
+            canvas_context.lineTo(this.target.x, this.target.y)
+            canvas_context.stroke()
+            canvas_context.lineWidth = linewidthstorage
+        }
+    }
+        class Points {
+        constructor(points){
+            this.points = points
+        }
+        draw(){
+            for(let t = 1;t<this.points.length;t++){
+                let link = new Line(this.points[t-1], this.points[t], "red", 1)
+                link.draw()
+            }
+        }
+    }
+    let points = []
+    let TIP_engine = {}
+        let canvas = document.getElementById('canvas')
+        canvas_context = canvas.getContext('2d');
+        canvas.style.background = "transparent"
+       window.addEventListener('pointerdown', e => {
+            FLEX_engine = canvas.getBoundingClientRect();
+            XS_engine = e.clientX - FLEX_engine.left;
+            YS_engine = e.clientY - FLEX_engine.top;
+            TIP_engine.x = XS_engine
+            TIP_engine.y = YS_engine
+            TIP_engine.body = TIP_engine
+            points.push(new Point(TIP_engine.x, TIP_engine.y))
+        });
+        window.setInterval(function () {
+            canvas_context.clearRect(0, 0, canvas.width, canvas.height)  // refreshes the image
+            let drawpoint = new Points(points)
+            drawpoint.draw()
+        }, 17)
+    </script>
   </body>
 </html>
