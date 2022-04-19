@@ -4,7 +4,7 @@ Hello! This is INVICTUS a workout tracking website. This website has been create
 
 How to use INVICTUS: 
     Unfortunately, although we have made lots of progress for this beta drop including adding our map api, fixing our tabs and updating descriptions and content on the websites, we have not been able to troubleshoot our hosting of the website. 
-    
+    Because of this, you may have to look at just our actual code, which you can find above this decription in the files. 
 Available features: 
 - navigate between 5 different tabs 
 - see a fake login page where eventually you will be able to login in to your account
